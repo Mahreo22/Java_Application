@@ -1,0 +1,20 @@
+public class TrafficLightState{
+	public static void main(String args[]){
+		enum TrafficLight {RED, YELLOW, GREEN};
+		
+		TrafficLight currentLight = TrafficLight.RED;
+		
+		switch(currentLight)
+		{
+		case RED:
+			System.out.println("Stop");
+		break;
+		case YELLOW:
+			System.out.println("Get ready");
+		break;	
+		case GREEN:
+			System.out.println("Go");
+		break;
+		}
+	}
+}
