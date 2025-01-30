@@ -20,18 +20,27 @@ public class BankAccount {
        
    }
    public void display(){
-        System.out.printf("Account Name : %s%n ", getaccountNumber());
-         System.out.printf("Account Balance : %.2f%n ", getbalance());
+        System.out.printf("Account Name : %s%n ", getAccountNumber());
+         System.out.printf("Account Balance : %.2f%n ", getBalance());
           
            
     }
-   public String getaccountNumber() {
+   public String getAccountNumber() {
         return accountNumber;
     }
 
-    public double getbalance() {
+    public double getBalance() {
         return balance;
     }
 
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+     
+     public void setBalance(double balance) {
+        this.balance = balance;
+    }
+      
+    
    
 }
